@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<!-- <script type="text/javascript" src="D:\viraj patil\simple_page\script.js"></script> -->
+	<script>
+		function me()
+		{
+let name = document.getElementById("name").value;
+let email = document.getElementById("email").value;
+var password = document.getElementById("pass").value;
+var gender = document.getElementById("gender").value;
+var city = document.getElementById("city").value;
+
+document.write("<h1 style='text-align:center; color:red;'>Your Name : "+name+"</h1>");
+document.write("<h1 style='text-align:center; color:red;'>Your Email : "+email+"</h1>");
+document.write("<h1 style='text-align:center; color:red;'>Your Password : "+password+"</h1>");
+document.write("<h1 style='text-align:center; color:red;'>Your gender : "+gender+"</h1>");
+document.write("<h1 style='text-align:center; color:red;'>Your city : "+city+"</h1>");
+	}
+	</script>
+</head>
+<body>
+<form method="post">
+	<table border="1">
+		<tr>
+			<td> <input type="text" name="name" id="name" placeholder="Enter Name"> </td>
+		</tr>
+		<tr>
+			<td> <input type="email" name="email" id="email" placeholder="Enter Email"> </td>
+		</tr>
+		<tr>
+			<td> <input type="password" name="pass" id="pass" placeholder="Enter Password"> </td>
+		</tr>
+		<tr>
+			<td> Gender : <br><input type="radio" name="gender" value="male" id="gender"> Male
+				<input type="radio" name="gender" id="gender" value="female"> Female</td>
+		</tr>
+		<tr> <td>
+			<select name="city" id="city">
+				<option>Select Your City :</option>
+				<option>Mumbai</option>
+				<option>Pune</option>
+				<option>Kolhapur</option>
+				<option>Satara</option>
+			</select> 
+			</td>
+		</tr>
+	</table>
+	<input type="submit" value="register" onclick="me()">
+</form>
+</body>
+</html>
